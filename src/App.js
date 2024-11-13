@@ -1,24 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import './style/App.css';
+import './style/var.css';
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Routes from './Routes'
+import Preloader from './components/preloader'
 
 function App() {
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+
+    const spin = setTimeout(()=>{
+      setIsLoading(false);
+    },2000);
+
+    return () => clearTimeout(spin);
+
+    // const handleLoad = () => { setIsLoading(false); }
+
+    // window.addEventListener('load', handleLoad);
+
+    // return () => {
+    //   window.removeEventListener('load', handleLoad);
+    // }
+
+  }, [])
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {isLoading ? <Preloader /> : (
+        <div className="content">
+          <Header />
+          <Routes />
+          <Footer />
+        </div>
+      )}
+    </>
   );
 }
 
