@@ -75,6 +75,33 @@ h6 {
 .menu {
     display: flex;
     align-items: center;
+    position: relative;
+    padding:10px;
+}
+
+.menu:hover{
+    background-color: rgba(49, 81, 30, 0.3);
+}
+
+.dropdown a{
+    text-decoration: none;
+    padding:10px;
+}
+
+.dropdown a:hover{
+    background-color:  rgba(49, 81, 30, 0.3);
+}
+
+.dropdown{
+    visibility:hidden;
+    background-color: white;
+    position: absolute;
+    top:70px;
+    left:204px;
+    width: 200px;
+    display:grid;
+    grid-template-columns: 100%;
+    z-index: 10;
 }
 
 .logo {
@@ -96,11 +123,12 @@ h6 {
 }
 
 .horizontal {
-    width: 50%;
-    height: 2px;
-    background-color: black;
+    width: 80%;
+    height: 1px;
+    /* height: 8px; */
+    /* border-radius: 100%; */
     margin: 30px auto;
-    transform: skew(89.50deg);
+    /* transform: skew(89.50deg); */
 }
 
 /* MAIN */
@@ -290,6 +318,7 @@ h6 {
     width: 150%;
     height: 100%;
     border-radius: 30px;
+    
 }
 
 /* MAIN 6 */
@@ -298,7 +327,7 @@ h6 {
     height: 40vw;
     overflow: hidden;
     background-image: url('../img/image7.jpg');
-    background-repeat:round;
+    background-size: cover;
 }
 
 /* .main6 p{
@@ -342,11 +371,41 @@ h6 {
     color:white;
 }
 
+.footer div:nth-child(1){
+    margin-right: 6vw;
+}
+
+.footer>div:nth-child(2){
+    margin-left: 6vw;
+}
+
 .footer div:nth-child(1) h4{
     font-size: 2vw;
     font-family: "Kaushan Script", cursive;
 }
 
 .footer div:nth-child(1) p{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+}
 
+.footer div:nth-child(1) img{
+    width:20px;
+    margin-right:20px;
+}
+
+.footer div:nth-child(2) h6{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.footer div:nth-child(2) a{
+    text-decoration: none;
+    color:white;
+}
+
+.footer div:nth-child(2) p{
+    margin-bottom: 20px;
 }

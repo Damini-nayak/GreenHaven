@@ -9,7 +9,7 @@ export default function Home() {
 
       <div className='main2'><div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maiores esse quis soluta optio</p></div><div className='logo'><img src={Base.logo} alt="" />GreenHaven</div><div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maiores esse quis soluta optio</p></div></div>
 
-      <div className='hr'><hr className='horizontal' /></div>
+      <hr className='horizontal' />
 
       <div className='main3'>
         <div><p>A Visit To GreenHaven</p></div>

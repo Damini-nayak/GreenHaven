@@ -6,6 +6,8 @@ import Image4 from '../img/image4.jpg'
 import Image5 from '../img/image5.jpg'
 import Image6 from '../img/image6.jpg'
 import Image7 from '../img/image7.jpg'
+import Instagram from '../img/instagram.png'
+import Pinterest from '../img/pinterest.png'
 
 const Base = {
     logo: Logo,
@@ -15,7 +17,9 @@ const Base = {
     image4: Image4,
     image5: Image5,
     image6: Image6,
-    image7: Image7
+    image7: Image7,
+    instagram: Instagram,
+    pinterest: Pinterest
 }
 
 export default Base;
