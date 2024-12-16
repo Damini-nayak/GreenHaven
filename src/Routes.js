@@ -13,7 +13,7 @@ export default function routes(){
     return(
         <Routes>
         <Route path='/' element={<Home/>}/>  
-        <Route path='/contactus' element={<Contactus/>}/>
+        {/* <Route path='/contactus' element={<Contactus/>}/> */}
         <Route path='/diy' element={<DIY/>}/>
         <Route path='/gardendesignidea' element={<Gardendesignidea/>}/>
         <Route path='/plantcareguide' element={<Plantcareguide/>}/>

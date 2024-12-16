@@ -22,16 +22,16 @@ export default function Home() {
       <div className='main4'>
         <div className='main4-heading'><h1>Catagory of garden </h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint repellat qui accusamus natus aut libero pariatur. Adipisci, odit. Cupiditate quod distinctio magni repellendus facere perspiciatis sequi molestiae fugit ut beatae?</p></div>
         <div className="catagories">
-          <div><img src={Base.image1} alt="" /><h2>the garden</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eaque tenetur quo vero distinctio expedita consectetur repellendus alias impedit!</p><p><a href="">link</a></p></div>
-          <div><img src={Base.image1} alt="" /><h2>the garden</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eaque tenetur quo vero distinctio expedita consectetur repellendus alias impedit!</p><p><a href="">link</a></p></div>
-          <div><img src={Base.image1} alt="" /><h2>the garden</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eaque tenetur quo vero distinctio expedita consectetur repellendus alias impedit!</p><p><a href="">link</a></p></div>
+          <div><img src={Base.image8} alt="" /><h2>the garden</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eaque tenetur quo vero distinctio expedita consectetur repellendus alias impedit!</p><p><a href="">Lorem ipsum dolor</a></p></div>
+          <div><img src={Base.image10} alt="" /><h2>the garden</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eaque tenetur quo vero distinctio expedita consectetur repellendus alias impedit!</p><p><a href="">Lorem ipsum dolor</a></p></div>
+          <div><img src={Base.image11} alt="" /><h2>the garden</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eaque tenetur quo vero distinctio expedita consectetur repellendus alias impedit!</p><p><a href="">Lorem ipsum dolor</a></p></div>
         </div>
       </div>
 
       <div className="main5">
         <div><h1>Flower Showcase</h1><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis incidunt nisi expedita in exercitationem eius qui ad, obcaecati consequatur tempora sint atque voluptatem modi dolores maxime velit neque et illum.</p><a href="">Lorem ipsum dolor sit amet consectet</a></div>
-        <div><img src={Base.image1} alt="" /></div>
-        <div><img src={Base.image1} alt="" /></div>
+        <div><img src={Base.image6} alt="" /></div>
+        <div><img src={Base.image3} alt="" /></div>
       </div>
 
       <div className="main6">

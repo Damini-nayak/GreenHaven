@@ -81,6 +81,7 @@ h6 {
 
 .menu:hover{
     background-color: rgba(49, 81, 30, 0.3);
+    border-radius: 5px;
 }
 
 .dropdown a{
@@ -94,6 +95,7 @@ h6 {
 
 .dropdown{
     visibility:hidden;
+    opacity: 0;
     background-color: white;
     position: absolute;
     top:70px;
@@ -102,14 +104,26 @@ h6 {
     display:grid;
     grid-template-columns: 100%;
     z-index: 10;
+    transition: visibility 0.3s, opacity 0.3s;
 }
 
 .dropdown.visible{
     visibility: visible;
-    
+    opacity: 1;
+}
+
+.dropdown a{
+    color:var(--black);
 }
 
 .logo {
+    display: flex;
+    align-items: end;
+}
+
+.logo a{
+    text-decoration: none;
+    color:var(--black);
     display: flex;
     align-items: end;
 }
@@ -269,8 +283,10 @@ h6 {
 
 .catagories img {
     width: 100%;
+    height: 400px;
     margin-bottom: 1vw;
     border-radius: 30px;
+    object-fit: cover;
 }
 
 .catagories div {
@@ -282,12 +298,20 @@ h6 {
     margin-top:1vw;
 }
 
+.catagories a{
+    color:var(--primary-color);
+}
+
 /* MAIN 5 */
 
 .main5{
     padding:3vw 0 3vw 10%;
     display: grid;
     grid-template-columns: 50% 30% 20%;
+}
+
+.main5 a{
+    color:var(--gray);
 }
 
 .main5 div:nth-child(1){
@@ -315,14 +339,16 @@ h6 {
 
 .main5 div:nth-child(2) img{
     width: 100%;
-    height: 100%;
+    height: 450px;
     border-radius: 30px;
+    object-fit: cover;
 }
 
 .main5 div:nth-child(3) img{
     width: 150%;
-    height: 100%;
+    height: 450px;
     border-radius: 30px;
+    object-fit: cover;
     
 }
 
@@ -413,4 +439,70 @@ h6 {
 
 .footer div:nth-child(2) p{
     margin-bottom: 20px;
+}
+
+
+
+/* SHOWCASE */
+
+.showcase{
+    padding:0 10% 3vw 10%;
+    text-align: center;
+}
+
+.showcase h1{
+    font-family: "Kaushan Script", cursive;
+    color:var(--black);
+    font-size: 6vw;
+    line-height: normal;
+}
+
+.showcaseDec{
+    color:var(--gray);
+}
+
+.showcaseDec2nd{
+    color:var(--black);
+    margin:6vw;
+    font-size:1.3vw ;
+}
+
+.showcases{
+    padding:3vw 10%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:20px;
+}
+
+.showcases>div{
+    border-radius: 20px;
+    overflow:hidden;
+    height: 400px;
+    position: relative;
+}
+
+.showcases img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.plantName{
+    font-family: "Kaushan Script", cursive;
+    font-size: 2vw;
+    padding-top:60%;
+    padding-bottom: 60%;
+    text-align: center;
+    top: 400px;
+    width: 100%;
+    height: 100%;
+    color: var(--black);
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 9;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+}
+
+.showcases>div:hover .plantName{
+    top:0;
 }

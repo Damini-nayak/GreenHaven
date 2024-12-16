@@ -14,9 +14,9 @@ export default function Header() {
   return (
     <>
       <div className='header'>
-        <div className='menu'><div className='dropicon' onClick={dropdownToggle}></div>Menu</div>
-        <div className={`dropdown ${isDropdownVisible ? 'visible' : 'hidden'}`}><a>Shop</a><a>Contact us</a><a>Plant care guides</a><a>DIY's</a><a>Garden design ideas</a><a>Showcase</a></div>
-        <div className='logo'><img src={Base.logo} alt="" />GreenHaven</div>
+        <div className='menu' onClick={dropdownToggle}><div className='dropicon'></div>Menu</div>
+        <div className={`dropdown ${isDropdownVisible ? 'visible' : 'hidden'}`}><a href=''>Shop</a><a href=''>Plant care guides</a><a href=''>DIY's</a><a href=''>Garden design ideas</a><a href='/showcase'>Showcase</a></div>
+        <div className='logo'><a href="/"><img src={Base.logo} alt="" />GreenHaven</a></div>
         <div className='login'><button>Login</button></div>
       </div>
       <hr className='horizontal' />
