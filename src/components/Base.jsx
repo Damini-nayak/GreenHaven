@@ -14,6 +14,7 @@ import Image12 from '../img/image12.jpg'
 import Image13 from '../img/image13.jpg'
 import Instagram from '../img/instagram.png'
 import Pinterest from '../img/pinterest.png'
+import Arrowright from '../img/arrow-right.png'
 
 const Base = {
     logo: Logo,
@@ -31,7 +32,8 @@ const Base = {
     image12: Image12,
     image13: Image13,
     instagram: Instagram,
-    pinterest: Pinterest
+    pinterest: Pinterest,
+    arrowright: Arrowright
 }
 
 export default Base;

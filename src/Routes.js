@@ -1,6 +1,6 @@
 import react from 'react';
 import { BrowserRouter, Router, Route, Routes, Link } from 'react-router-dom';
-import Contactus from './pages/Contactus';
+// import Contactus from './pages/Contactus';
 import DIY from './pages/DIY';
 import Gardendesignidea from './pages/Gardendesingidea';
 import Plantcareguide from './pages/Plantcareguide';
