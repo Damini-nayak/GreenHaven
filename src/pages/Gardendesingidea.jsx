@@ -20,7 +20,7 @@ export default function Gardendesingidea() {
       <div><img src={Base.image8} alt="" /><h3>lorem ipsum dolor sit</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laboriosam quod officiis, ullam cum ipsa doloribus sit corrupti! Eaque maiores voluptatibus non dignissimos dolores sit animi inventore laboriosam illo rerum!</p></div>
       <div><img src={Base.image6} alt="" /><h3>lorem ipsum dolor sit</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laboriosam quod officiis, ullam cum ipsa doloribus sit corrupti! Eaque maiores voluptatibus non dignissimos dolores</p></div>
     </div>
-    <div className='designhoriz'><hr className='horizontal' /><p>lorem ipsum dolor sit</p><hr className='horizontal' /></div>
+    <div className='designhoriz'><hr className='horizontal' /><p>&copy;2024</p><hr className='horizontal' /></div>
     
     </>
   )

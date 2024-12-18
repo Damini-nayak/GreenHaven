@@ -29,7 +29,7 @@ export default function Home() {
       </div>
 
       <div className="main5">
-        <div><h1>Flower Showcase</h1><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis incidunt nisi expedita in exercitationem eius qui ad, obcaecati consequatur tempora sint atque voluptatem modi dolores maxime velit neque et illum.</p><a href="">Lorem ipsum dolor sit amet consectet</a></div>
+        <div><h1>Flower Showcase</h1><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis incidunt nisi expedita in exercitationem eius qui ad, obcaecati consequatur tempora sint atque voluptatem modi dolores maxime velit neque et illum.</p><a href="/showcase">Lorem ipsum dolor sit amet consectet</a></div>
         <div><img src={Base.image6} alt="" /></div>
         <div><img src={Base.image3} alt="" /></div>
       </div>
