@@ -11,6 +11,7 @@ export default function DIY() {
       </div>
     </div>
     <div className='designhoriz'><hr className='horizontal' /><p>lorem ipsum dolor sit</p><hr className='horizontal' /></div>
+    <div className='textaligncenter'><div></div><h2><span>Lorem ipsum</span> dolor sit amet consectetur adipisicing. quasi perspiciatis</h2></div>
     <div className='diymain2'>
         <div className='diy1 diys'>
         <div className='box box1'><p>lorem ipsum dolor sit</p></div>
@@ -24,11 +25,16 @@ export default function DIY() {
           <div className='box box3'><p>lorem ipsum dolor sit</p></div>
         </div>
       </div>
-      <div className='designhoriz'><hr className='horizontal' /><p>lorem ipsum dolor sit</p><hr className='horizontal' /></div>
+      <div className='designhoriz'><hr className='horizontal' /><p>&copy;2024</p><hr className='horizontal' /></div>
+
       <div className='diymain3'>
 
       </div>
       <div className='designhoriz'><hr className='horizontal' /><p>&copy;2024</p><hr className='horizontal' /></div>
+      {/* <div className='diymain3'>
+
+      </div>
+      <div className='designhoriz'><hr className='horizontal' /><p>&copy;2024</p><hr className='horizontal' /></div> */}
     </>
   )
 }

@@ -743,3 +743,19 @@ h6 {
 .diymain2 .box3{
     background-image: url('../img/image3.jpg');
 }
+
+
+.textaligncenter{
+    display: grid;
+    grid-template-columns: 100%;
+    text-align: center;
+    margin: 4vw 10%;
+}
+
+.textaligncenter h2{
+    font-size: 3vw;
+}
+
+.textaligncenter span{
+    color: var(--gray);
+}
