@@ -21,7 +21,7 @@ export default function Showcase() {
       <div><img src={Base.image12} alt="" /><h1 className='plantName'>Shoeblackplant</h1></div>
       <div><img src={Base.image13} alt="" /><h1 className='plantName'>Red valvet rose</h1></div>
     </div>
-    <div className='showcase'><h1></h1>
+    <div className='showcase'>
     {/* <p className='showcaseDec'>"We will continue to add new plants, making our haven even more vibrant and alive. Get ready to immerse yourself in our colorful haven."</p></div> */}
     <p className='showcaseDec2nd'>"Discover a variety of vibrant, fresh, and exotic plants, perfect for every outdoor space. Whether you're a seasoned gardener or just starting, these plants bring life and beauty to your surroundings. Explore now and find the perfect addition to your garden"</p></div>
     <div className='designhoriz'><hr className='horizontal' /><p>&copy;2024</p><hr className='horizontal' /></div>

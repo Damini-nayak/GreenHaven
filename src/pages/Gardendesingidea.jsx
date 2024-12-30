@@ -10,6 +10,7 @@ export default function Gardendesingidea() {
       <div className='designs'><img src={Base.image3} alt="" /><div className='designdes'><h2>lorem ipsum dolor sit</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque nesciunt accusamus ratione odio natus quam doloremque quia eligendi, veniam dolorem minus quasi sapiente provident hic quis deserunt porro ullam.</p></div><div className='movingarrow'><img src={Base.arrowright} alt="" /></div></div>
       <div className='designs'><img src={Base.image4} alt="" /><div className='designdes'><h2>lorem ipsum dolor sit</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque nesciunt accusamus ratione odio natus quam doloremque quia eligendi, veniam dolorem minus quasi sapiente provident hic quis deserunt porro ullam.</p></div><div className='movingarrow'><img src={Base.arrowright} alt="" /></div></div>
     </div>
+    <br />
     <div className='designhoriz'><hr className='horizontal' /><p>lorem ipsum dolor sit</p><hr className='horizontal' /></div>
     <div className='textalignright'><div></div><h2><span>Lorem ipsum</span> dolor sit amet consectetur adipisicing. quasi perspiciatis</h2></div>
     <div className='designideas'>

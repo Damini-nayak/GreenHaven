@@ -15,7 +15,19 @@ import Image13 from '../img/image13.jpg'
 import Instagram from '../img/instagram.png'
 import Pinterest from '../img/pinterest.png'
 import Arrowright from '../img/arrow-right.png'
-
+import Ableright from '../img/ableright.png'
+import Ableleft from '../img/ableleft.png'
+import Indoorplant from '../img/indoorplant.jpg'
+import Outdoorplant from '../img/outdoorplant.jpg'
+import Cacti from '../img/cacti.jpg'
+import Tropicalplant from '../img/tropicalplant.jpg'
+import Floweringplant from '../img/floweringplant.jpg'
+import Herbs from '../img/herbs.jpg'
+import Ferns from '../img/ferns.jpg'
+import Tulips from '../img/tulips.jpg'
+import Sunflower from '../img/sunflower.jpg'
+import Pansies from '../img/pansies.jpg' 
+import Hellebores from '../img/hellebores.jpg'
 const Base = {
     logo: Logo,
     image1: Image1,
@@ -33,7 +45,21 @@ const Base = {
     image13: Image13,
     instagram: Instagram,
     pinterest: Pinterest,
-    arrowright: Arrowright
+    arrowright: Arrowright,
+    ableright: Ableright,
+    ableleft: Ableleft,
+    indoorplant: Indoorplant,
+    outdoorplant: Outdoorplant,
+    cacti: Cacti,
+    tropicalplant: Tropicalplant,
+    floweringplant: Floweringplant,
+    herbs: Herbs,
+    ferns: Ferns,
+    tulips: Tulips,
+    sunflower: Sunflower,
+    pansies: Pansies,
+    hellebores: Hellebores
+
 }
 
 export default Base;
