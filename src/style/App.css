@@ -101,7 +101,8 @@ h6 {
     position: absolute;
     top: 70px;
     right: 10%;
-    width: 200px;
+    border-radius: 5px;
+    /* width: 200px; */
     display: grid;
     grid-template-columns: 100%;
     z-index: 10;
@@ -158,8 +159,8 @@ h6 {
     justify-self: center;
     width: 80%;
     /* height: 550px; */
-    height: 650px;
-    border-radius: 30px;
+    height: 35vw;
+    border-radius: 20px;
     background-image: url('../img/image4.jpg');
     background-size: cover;
 }
@@ -197,13 +198,13 @@ h6 {
 }
 
 .main2 div:nth-child(2) {
-    font-size: 24px;
+    font-size: 1.5vw;
     border-right: 2px solid black;
     border-left: 2px solid black;
 }
 
 .main2 div:nth-child(2) img {
-    width: 40px;
+    width: 2vw;
 }
 
 
@@ -219,7 +220,7 @@ h6 {
 .main3 div:nth-child(1) p {
     text-align: center;
     margin: 1vw auto;
-    font-size: large;
+    font-size: 1.2vw;
     font-weight: bold;
     opacity: 0.8;
 }
@@ -240,7 +241,7 @@ h6 {
 }
 
 .visit-to div:nth-child(1) img {
-    border-radius: 30px;
+    border-radius: 20px;
     width: 100%;
 }
 
@@ -289,9 +290,9 @@ h6 {
 .catagories img {
     width: 100%;
     /* height: 400px; */
-    height: 500px;
+    height: 25vw;
     margin-bottom: 1vw;
-    border-radius: 30px;
+    border-radius: 20px;
     object-fit: cover;
 }
 
@@ -347,16 +348,16 @@ h6 {
 .main5 div:nth-child(2) img {
     width: 100%;
     /* height: 450px; */
-    height: 550px;
-    border-radius: 30px;
+    height: 30vw;
+    border-radius: 20px;
     object-fit: cover;
 }
 
 .main5 div:nth-child(3) img {
     width: 150%;
     /* height: 450px; */
-    height: 550px;
-    border-radius: 30px;
+    height: 30vw;
+    border-radius: 20px;
     object-fit: cover;
 
 }
@@ -419,16 +420,16 @@ h6 {
 .footer div:nth-child(1) p {
     margin-bottom: 20px;
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 0.8vw;
 }
 
 .footer div:nth-child(1) img {
-    width: 20px;
+    width: 1.2vw;
     margin-right: 20px;
 }
 
 .footer div:nth-child(2) h6 {
-    font-size: 14px;
+    font-size: 0.8vw;
     font-weight: 400;
     margin-bottom: 20px;
 }
@@ -478,7 +479,7 @@ h6 {
 .showcases>div {
     border-radius: 20px;
     overflow: hidden;
-    height: 500px;
+    height: 25vw;
     /* height: 400px; */
     position: relative;
 }
@@ -496,7 +497,7 @@ h6 {
     padding-bottom: 60%;
     text-align: center;
     /* top: 400px; */
-    top: 500px;
+    top: 25vw;
     width: 100%;
     height: 100%;
     color: var(--black);
@@ -540,7 +541,7 @@ h6 {
 .designs {
     border-radius: 20px;
     /* height: 400px; */
-    height: 500px;
+    height: 25vw;
     overflow: hidden;
     position: relative;
 }
@@ -556,7 +557,7 @@ h6 {
     position: absolute;
     top: 0;
     background-color: rgba(255, 255, 255, 0.5);
-    height: 500px;
+    height: 25vw;
     /* height: 400px; */
     opacity: 0;
     transition: opacity 1.0s ease;
@@ -574,7 +575,7 @@ h6 {
 }
 
 .designdes h2 {
-    margin-right: 60px;
+    margin-right: 3.5vw;
     margin-bottom: 1vw;
 }
 
@@ -583,8 +584,8 @@ h6 {
     top: 2vw;
     right: 2vw;
     padding: 5px;
-    width: 24px;
-    height: 24px;
+    width: 1.5vw;
+    height: 1.5vw;
     border: 1px solid white;
     border-radius: 50%;
     transform: rotate(-45deg);
@@ -606,6 +607,7 @@ h6 {
     background-color: white;
     padding: 10px;
     color: var(--gray);
+    font-size: 1vw;
 }
 
 .textalignright {
@@ -677,7 +679,7 @@ h6 {
     background-size: cover;
     width: 100%;
     /* height: 500px; */
-    height: 600px;
+    height: 30vw;
     display: grid;
     text-align: center;
     align-items: center;
@@ -700,14 +702,14 @@ h6 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
-    height: 500px;
+    height: 25vw;
     margin: 2vw 20%;
     gap: 2vw;
 }
 
 .diymain2 .box {
-    width: 300px;
-    height: 300px;
+    width: 15vw;
+    height: 15vw;
     overflow: hidden;
     justify-content: center;
     display: flex;
@@ -815,13 +817,13 @@ h6 {
     flex: 0 0 25%;
     max-width: calc(25% - 20px);
     margin: 10px;
-    height: 400px;
+    height: 20vw;
 }
 
 .carousel-img img {
     overflow: hidden;
     width: 100%;
-    height: 400px;
+    height: 20vw;
     object-fit: cover;
 }
 
@@ -834,10 +836,14 @@ h6 {
     background-size: cover;
     width: 100%;
     /* height: 500px; */
-    height: 600px;
+    height: 30vw;
     display: grid;
     text-align: center;
     align-items: center;
+}
+
+.plantcarehead h1{
+    font-size: 3vw;
 }
 
 .plantcarehead p {
@@ -858,12 +864,12 @@ h6 {
 
 .beginnercontent div:nth-child(1){
     position: relative;
-    height: 400px;
+    height: 20vw;
 }
 
 .beginnercontent img{
     width: 100%;
-    height: 400px;
+    height: 20vw;
     object-fit: cover;
     border-radius: 20px;
 }
@@ -962,7 +968,7 @@ h6 {
 
 .seasonal1, .seasonal2{
     display:grid;
-    height: 400px;
+    height: 20vw;
 }
 
 .seasonal1{
@@ -993,15 +999,15 @@ h6 {
 }
 
 .seasflowimg img{
-    height: 400px;
+    height: 20vw;
     object-fit: cover;
     width: 100%;
 }
 
 .arrow90deg{
     padding: 0.5vw;
-    width: 24px;
-    height: 24px;
+    width: 1.5vw;
+    height: 1.5vw;
     border: 1px solid white;
     border-radius: 50%;
     position: absolute;
@@ -1014,8 +1020,8 @@ h6 {
 
 .arrow90deg img{
     border-radius: 50%;
-    width: 24px;
-    height: 24px;
+    width: 1.5vw;
+    height: 1.5vw;
 }
 
 .seasonaldec{
