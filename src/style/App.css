@@ -95,6 +95,7 @@ h6 {
 }
 
 .dropdown {
+    overflow: hidden;
     visibility: hidden;
     opacity: 0;
     background-color: white;
@@ -169,7 +170,7 @@ h6 {
 
 .main p,
 .main6 p {
-    margin:2vw;
+    margin: 2vw;
     position: absolute;
     color: white;
     opacity: 0.8;
@@ -347,19 +348,18 @@ h6 {
 
 .main5 div:nth-child(2) img {
     width: 100%;
-    /* height: 450px; */
-    height: 30vw;
-    border-radius: 20px;
-    object-fit: cover;
 }
 
 .main5 div:nth-child(3) img {
     width: 150%;
-    /* height: 450px; */
+
+}
+
+.main5 div:nth-child(3) img,
+.main5 div:nth-child(2) img {
     height: 30vw;
     border-radius: 20px;
     object-fit: cover;
-
 }
 
 /* MAIN 6 */
@@ -386,11 +386,11 @@ h6 {
 }
 
 .main7 h3 {
-    font-size: 1.2vw;
+    font-size: 1.4vw;
 }
 
 .main7 p:nth-child(2) {
-    font-size: 1vw;
+    font-size: 1.2vw;
     margin-bottom: 1vw;
 }
 
@@ -415,6 +415,14 @@ h6 {
 .footer div:nth-child(1) h4 {
     font-size: 2vw;
     font-family: "Kaushan Script", cursive;
+}
+
+.footer p {
+    font-size: 0.8vw;
+}
+
+.footer div:nth-child(1) h6 {
+    font-size: 0.8vw;
 }
 
 .footer div:nth-child(1) p {
@@ -575,8 +583,13 @@ h6 {
 }
 
 .designdes h2 {
+    font-size: 1.5vw;
     margin-right: 3.5vw;
     margin-bottom: 1vw;
+}
+
+.designdes p {
+    font-size: 1vw;
 }
 
 .movingarrow {
@@ -627,7 +640,7 @@ h6 {
 
 .designideas {
     gap: 2vw;
-    margin: 2vw 10%;
+    margin: 4vw 10%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -650,7 +663,7 @@ h6 {
 }
 
 .designideas h2 {
-    font-size: 2vw;
+    font-size: 2.5vw;
 }
 
 .designideasleftH {
@@ -685,7 +698,8 @@ h6 {
     align-items: center;
 }
 
-.diymain h1, .plantcarehead h1 {
+.diymain h1,
+.plantcarehead h1 {
     font-size: 3vw;
     color: white;
     margin-bottom: 1vw;
@@ -696,6 +710,7 @@ h6 {
     border-radius: 5px;
     padding: 0.6vw;
     margin: 1vw;
+    font-size: 1vw;
 }
 
 .diymain2 {
@@ -736,11 +751,11 @@ h6 {
     align-items: start;
 }
 
-.diy2 { 
+.diy2 {
     align-items: center;
 }
 
-.diy3 {  
+.diy3 {
     align-items: end;
 }
 
@@ -782,7 +797,7 @@ h6 {
 
 
 .carousel-container {
-    margin: 2vw 10%;
+    margin: 4vw 10%;
     overflow: hidden;
 }
 
@@ -812,7 +827,7 @@ h6 {
 }
 
 .carousel-img {
-     border-radius: 20px;
+    border-radius: 20px;
     overflow: hidden;
     flex: 0 0 25%;
     max-width: calc(25% - 20px);
@@ -842,195 +857,195 @@ h6 {
     align-items: center;
 }
 
-.plantcarehead h1{
-    font-size: 3vw;
-}
-
 .plantcarehead p {
     margin: 1vw;
-    color:white;
+    color: white;
     font-size: 1vw;
 }
 
-.forbeginner{
-    display:grid;
+.forbeginner {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin: 2vw 10%;
+    margin: 4vw 10%;
 }
 
-.beginnercontent{
+.beginnercontent {
     margin: 2vw;
 }
 
-.beginnercontent div:nth-child(1){
+.beginnercontent div:nth-child(1) {
     position: relative;
     height: 20vw;
 }
 
-.beginnercontent img{
+.beginnercontent img {
     width: 100%;
     height: 20vw;
     object-fit: cover;
     border-radius: 20px;
 }
 
-.beginnerhead{
+.beginnerhead {
     opacity: 1;
     position: absolute;
-    top:0;
+    top: 0;
     margin: 2vw;
-    padding:1vw;
+    padding: 1vw;
     background-color: white;
     transition: opacity 0.5s ease-in-out;
     border-radius: 20px;
+    font-size: 1.5vw;
 }
 
-.beginnercontent:hover .beginnerhead{
-    opacity:0;
+.beginnercontent:hover .beginnerhead {
+    opacity: 0;
 }
 
-.beginnerpara{
+.beginnerpara {
     opacity: 0;
     z-index: 9;
     width: 100%;
     height: 100%;
     background-color: rgb(0, 0, 0, 0.5);
     position: absolute;
-    top:0;
+    top: 0;
     border-radius: 20px;
     transition: opacity 0.5s ease-in-out;
 }
 
-.beginnerp{
-    color:white;
+.beginnerp {
+    color: white;
 }
 
-.beginnerpara>div{
-    padding:1vw;
+.beginnerpara>div {
+    padding: 1vw;
 }
 
-.beginnercontent:hover .beginnerpara{
+.beginnercontent:hover .beginnerpara {
     opacity: 1;
 }
 
-.carouselcontentdiv{
+.carouselcontentdiv {
     border-radius: 20px;
     position: relative;
     overflow: hidden;
 }
 
-.carouselhead{
-    position:absolute;
+.carouselhead {
+    position: absolute;
     top: 60%;
     width: 100%;
     height: 100%;
     font-size: 1.5vw;
     display: flex;
-    color:white;
+    color: white;
     transition: top 1.0s ease;
 }
 
-.carouselhead h2{
+.carouselhead h2 {
     padding: 1vw;
 }
-.carouselpara p{
-    padding:1vw;
+
+.carouselpara p {
+    padding: 1vw;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.carouselpara{
-    opacity:0;
+.carouselpara {
+    opacity: 0;
     display: flex;
     align-items: end;
     position: absolute;
     top: 0;
     width: 100%;
-    height:100%;
+    height: 100%;
     transition: opacity 1.0s ease;
-    color:white;
+    color: white;
 }
 
-.carouselpara span{
+.carouselpara span {
     font-weight: bold;
 }
 
-.carouselcontentdiv:hover .carouselhead{
-    top:0;
+.carouselcontentdiv:hover .carouselhead {
+    top: 0;
 }
 
-.carouselcontentdiv:hover .carouselpara{
-    opacity:1;
+.carouselcontentdiv:hover .carouselpara {
+    opacity: 1;
 }
 
-.seasonal{
-    margin: 2vw 10%;
+.seasonal {
+    margin: 4vw 10%;
 }
 
-.seasonal1, .seasonal2{
-    display:grid;
+.seasonal1,
+.seasonal2 {
+    display: grid;
     height: 20vw;
 }
 
-.seasonal1{
+.seasonal1 {
     grid-template-columns: 1fr 2fr;
 }
-.seasonal2{
+
+.seasonal2 {
     grid-template-columns: 2fr 1fr;
 }
 
-.seasonalflower{
+.seasonalflower {
     margin: 1vw;
     overflow: hidden;
     position: relative;
     border-radius: 20px;
 }
 
-.seasonalflower:hover .arrow90deg{
+.seasonalflower:hover .arrow90deg {
     transform: rotate(45deg);
     background-color: black;
 }
 
-.seasonalflower:hover .seasflowhead{
+.seasonalflower:hover .seasflowhead {
     opacity: 0;
 }
 
-.seasonalflower:hover .seasdec{
+.seasonalflower:hover .seasdec {
     opacity: 1;
 }
 
-.seasflowimg img{
+.seasflowimg img {
     height: 20vw;
     object-fit: cover;
     width: 100%;
 }
 
-.arrow90deg{
+.arrow90deg {
     padding: 0.5vw;
     width: 1.5vw;
     height: 1.5vw;
     border: 1px solid white;
     border-radius: 50%;
     position: absolute;
-    top:2vw;
-    right:2vw;
+    top: 2vw;
+    right: 2vw;
     transform: rotate(-45deg);
     z-index: 9;
     transition: transform 1.0s ease, background-color 1.0s ease;
 }
 
-.arrow90deg img{
+.arrow90deg img {
     border-radius: 50%;
     width: 1.5vw;
     height: 1.5vw;
 }
 
-.seasonaldec{
-    margin: 2vw 10%;
+.seasonaldec {
+    margin: 4vw 10%;
     text-align: center;
     color: var(--gray);
 }
 
-.seasflowhead{
+.seasflowhead {
     position: absolute;
     font-size: 1.5vw;
     bottom: 0;
@@ -1039,8 +1054,8 @@ h6 {
     transition: opacity 1.0s ease;
 }
 
-.seasdec{
-    opacity:0;
+.seasdec {
+    opacity: 0;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -1051,10 +1066,183 @@ h6 {
     transition: opacity 1.0s ease;
 }
 
-.seasdec span{
+.seasdec span {
     font-weight: bold;
 }
 
-.seasdec p{
-    padding:1vw;
+.seasdec p {
+    padding: 1vw;
+}
+
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (max-width: 1367px) {
+
+    .spinner img {
+        width: 4vw;
+    }
+
+    .designs {
+        height: 27vw;
+    }
+
+    .diymain h1,
+    .plantcarehead h1 {
+        font-size: 4vw;
+    }
+
+    .plantcarehead p,
+    .diymain p span {
+        font-size: 1.5vw;
+    }
+
+    .main,
+    .visit-to div:nth-child(1) img,
+    .catagories img,
+    .main5 div:nth-child(2) img,
+    .main5 div:nth-child(3) img,
+    .showcases>div,
+    .designs,
+    .designideas img,
+    .diymain2 .box,
+    .carousel-img,
+    .beginnercontent img,
+    .beginnerhead,
+    .beginnerpara,
+    .carouselcontentdiv,
+    .seasonalflower {
+        border-radius: 10px;
+    }
+
+    .designdes p {
+        font-size: 1.2vw;
+    }
+
+    .seasonal1,
+    .seasonal2 {
+        height: 22vw;
+    }
+
+    .seasflowimg img {
+        height: 22vw;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .spinner img {
+        width: 5vw;
+    }
+
+    .main3 div:nth-child(1) p {
+        font-size: 1.5vw;
+    }
+
+    .visit-to div:nth-child(1),
+    .visit-to div:nth-child(2) {
+        padding: 0 5vw;
+    }
+
+    .carousel-img,
+    .carousel-img img {
+        height: 25vw;
+    }
+
+    .catagories img {
+        height: 30vw;
+    }
+
+    .header {
+        margin: 0 8%;
+    }
+
+    .dropdown {
+        right: 8%;
+    }
+
+    .main4,
+    .footer,
+    .showcases {
+        padding: 3vw 8%;
+    }
+
+
+    .main4 {
+        width: 85%;
+    }
+
+    .designideades,
+    .design3,
+    .designhoriz,
+    .textalignright,
+    .designideas,
+    .textaligncenter,
+    .carousel-container,
+    .forbeginner,
+    .seasonal,
+    .seasonaldec {
+        margin: 4vw 8%;
+    }
+
+    .main5 {
+        padding: 3vw 0 3vw 8%;
+    }
+
+    .main5 div:nth-child(1) {
+        padding: 0 4vw;
+    }
+
+    .main2 div:nth-child(2) {
+        font-size: 2vw;
+    }
+
+    .main2 div:nth-child(2) img {
+        width: 2.5vw;
+    }
+
+    .main2 div {
+        padding: 1.5vw;
+        margin: 1.5vw;
+    }
+
+    .main7 {
+        padding: 10% 15%;
+    }
+
+    .designdes h2 {
+        font-size: 1.8vw;
+    }
+
+    .designdes p {
+        font-size: 1.4vw;
+    }
+
+    .diymain2 {
+        margin: 2vw 15%;
+    }
+
+    .diymain2 .box {
+        width: 16vw;
+        height: 16vw;
+    }
+
+    .beginnercontent div:nth-child(1),
+    .beginnercontent img {
+        height: 23vw;
+    }
+
+    .beginnerhead {
+        font-size: 1.8vw;
+    }
+
+    .seasonal1,
+    .seasonal2 {
+        height: 24vw;
+    }
+
+    .seasflowimg img {
+        height: 24vw;
+    }
+
 }
