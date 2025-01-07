@@ -14,9 +14,27 @@ const Plantcarecarousel = () => {
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [visibleCard, setVisibleCard] = useState(4);
+    
+      React.useEffect(()=> {
+        const updateVisibleCard = ()=> {
+          if (window.innerWidth <= 576) {
+            setVisibleCard(1);
+          }else if(window.innerWidth <= 1025) {
+            setVisibleCard(3);
+          }else {
+            setVisibleCard(4);
+          }
+        };
+    
+      updateVisibleCard();
+        window.addEventListener("resize", updateVisibleCard);
+    
+        return () => window.removeEventListener("resize", updateVisibleCard);
+      }, []);
 
     const next = () => {
-        if (currentIndex < cards.length - 1) {
+        if (currentIndex < cards.length - visibleCard) {
             setCurrentIndex((prevIndex) => prevIndex + 1);
         }
     };
@@ -43,8 +61,8 @@ const Plantcarecarousel = () => {
 
                         <button className='next'
                             onClick={next}
-                            disabled={currentIndex === cards.length - 4}
-                            style={{ opacity: currentIndex === cards.length - 4 ? 0.5 : 1 }}>
+                            disabled={currentIndex === cards.length - visibleCard}
+                            style={{ opacity: currentIndex === cards.length - visibleCard ? 0.5 : 1 }}>
                             <img src={Base.ableright} alt="" /></button>
 
                     </div>

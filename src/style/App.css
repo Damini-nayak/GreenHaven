@@ -183,7 +183,8 @@ h6 {
 /* MAIN 2 */
 
 .main2 {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-self: center;
     align-items: center;
     width: 80%;
@@ -199,6 +200,7 @@ h6 {
 }
 
 .main2 div:nth-child(2) {
+    padding:10% 20%;
     font-size: 1.5vw;
     border-right: 2px solid black;
     border-left: 2px solid black;
@@ -481,14 +483,13 @@ h6 {
     padding: 3vw 10%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 2vw;
 }
 
 .showcases>div {
     border-radius: 20px;
     overflow: hidden;
     height: 25vw;
-    /* height: 400px; */
     position: relative;
 }
 
@@ -814,6 +815,7 @@ h6 {
 
 .nextprev-container .nextprev {
     text-align: right;
+
 }
 
 .nextprev button {
@@ -1157,6 +1159,10 @@ h6 {
         margin: 0 8%;
     }
 
+    .horizontal, .main3, .main2, .main4, .main {
+        width: 84%;
+    }
+
     .dropdown {
         right: 8%;
     }
@@ -1165,11 +1171,6 @@ h6 {
     .footer,
     .showcases {
         padding: 3vw 8%;
-    }
-
-
-    .main4 {
-        width: 85%;
     }
 
     .designideades,
@@ -1243,6 +1244,289 @@ h6 {
 
     .seasflowimg img {
         height: 24vw;
+    }
+
+}
+
+@media (max-width:1025px){
+
+    .main,
+    .visit-to div:nth-child(1) img,
+    .catagories img,
+    .main5 div:nth-child(2) img,
+    .main5 div:nth-child(3) img,
+    .showcases>div,
+    .designs,
+    .designideas img,
+    .diymain2 .box,
+    .carousel-img,
+    .beginnercontent img,
+    .beginnerhead,
+    .beginnerpara,
+    .carouselcontentdiv,
+    .seasonalflower {
+        border-radius: 8px;
+    }
+
+    .header {
+        margin: 0 4%;
+    }
+
+    .horizontal, .main3, .main2, .main4, .main {
+        width: 92%;
+    }
+
+    .dropdown {
+        right: 4%;
+    }
+
+    .main4,
+    .footer,
+    .showcases {
+        padding: 3vw 4%;
+    }
+
+    .main7 {
+        padding: 10%;
+    }
+
+    .designideades,
+    .design3,
+    .designhoriz,
+    .textalignright,
+    .designideas,
+    .textaligncenter,
+    .carousel-container,
+    .forbeginner,
+    .seasonal,
+    .seasonaldec {
+        margin: 4vw 4%;
+    }
+
+    .beginnercontent div:nth-child(1),
+    .beginnercontent img {
+        height: 25vw;
+    }
+
+    .beginnerp, .seasonaldec, .seasdec  {
+        font-size: 1.5vw;
+    }
+
+    .beginnerhead {
+        font-size: 2.2vw;
+    }
+
+    .movingarrow {
+        width: 2vw;
+        height: 2vw;
+    }
+
+    .designideas h3 {
+        font-size: 1.8vw;
+    }
+    
+    .designideas p {
+        font-size: 1.3vw;
+    }
+
+    .designideasleftH p {
+        font-size: 2vw;
+    }
+
+    .designideades h1, .designideas h2 {
+        font-size: 2.8vw;
+    }
+    
+    .designideades p {
+        font-size: 1.5vw;
+    }
+
+    .main5 {
+        padding: 3vw 0 3vw 4%;
+    }
+
+
+    .showcases {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5vw;
+    }
+
+    .showcases>div {
+        height: 35vw;
+    }
+
+    .showcaseDec {
+        font-size: 1.5vw;
+    }
+
+    .showcaseDec2nd {
+        margin: 6vw 0;
+        font-size: 1.5vw;
+    }
+
+    .plantName {
+        top: 35vw;
+        font-size: 3vw;
+    }
+
+    .design3, .designideas, .diymain2 {
+        gap: 1.5vw;
+    }
+
+    .diymain2 {
+        margin: 2vw 10%;
+        height: 35vw;
+    }
+
+    .seasonal1,
+    .seasonal2 {
+        height: 26vw;
+    }
+
+    .arrow90deg, .arrow90deg img {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .plantcarehead, .diymain {
+        height: 35vw;
+    }
+
+    .diymain2 .box {
+        width: 22vw;
+        height: 22vw;
+    }
+
+    .carousel-img {
+        flex: 0 0 33.33%;
+        max-width: calc(33.33% - 20px);
+    }
+}
+
+@media (max-width:768px){
+
+    .main2 p {
+        font-size: 2vw;
+    }
+
+    .main3 div:nth-child(1) p {
+        font-size: 3vw;
+    }
+
+    .visit-to p {
+        font-size: 2vw;
+    }
+
+    .main4-heading p {
+        font-size: 2vw;
+    }
+
+    .main4-heading {
+        margin: 0 10%;
+    }
+
+    .catagories h2 {
+        font-size: 3vw;
+    }
+
+    .catagories p{
+        font-size: 2vw;
+    }
+
+    .catagories{
+        gap: 1vw;
+    }
+
+    .catagories div {
+        padding: 1vw;
+    }
+
+    .catagories img {
+        height: 35vw;
+    }
+
+    .main5 div:nth-child(1) p {
+        font-size: 2vw;
+    }
+
+    .main5 div:nth-child(1) a{
+        font-size: 2vw;
+    }
+
+    .main7 p:nth-child(2) {
+        font-size: 1.5vw;
+    }
+
+    .main7 h3 {
+        font-size: 1.8vw;
+    }
+
+    .showcaseDec {
+        font-size: 2vw;
+    }
+
+    .showcaseDec2nd {
+        font-size: 2vw;
+    }
+
+    .designideades p {
+        font-size: 2vw;
+    }
+
+    .movingarrow {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .designs, .designdes {
+        height: 30vw;
+    }
+
+    .designdes h2 {
+        font-size: 2.5vw;
+    }
+
+    .designideas h3 {
+        font-size: 2vw;
+        margin-bottom: 1vw;
+        font-weight: 400;
+    }
+    
+    .designideas p {
+        font-size: 1.5vw;
+    }
+
+    .designideasleftH p {
+        font-size: 2vw;
+    }
+
+    .diys .designideasleftH p {
+        font-size: 2vw;
+    }
+
+    .diymain2 .box p {
+        font-size: 3vw;
+    }
+
+    .diymain2 .box {
+        width: 24vw;
+        height: 24vw;
+    }
+
+    .nextprev-container h1{
+        font-size: 2.8vw;
+    }
+
+    .beginnerp, .seasonaldec, .seasdec  {
+        font-size: 2vw;
+    }
+
+    .carouselpara p {
+        font-size: 2vw;
+    }
+
+    .carouselhead h2 {
+        font-size: 2.5vw;
     }
 
 }
