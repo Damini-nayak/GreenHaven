@@ -200,7 +200,7 @@ h6 {
 }
 
 .main2 div:nth-child(2) {
-    padding:10% 20%;
+    padding: 10% 20%;
     font-size: 1.5vw;
     border-right: 2px solid black;
     border-left: 2px solid black;
@@ -317,14 +317,19 @@ h6 {
 .main5 {
     padding: 3vw 0 3vw 10%;
     display: grid;
-    grid-template-columns: 50% 30% 20%;
+    grid-template-columns: 50% 50%;
+}
+
+.main5>div:nth-child(2){
+    display: grid;
+    grid-template-columns: 60% 40%;
 }
 
 .main5 a {
-    color: var(--gray);
+    color: var(--gray); 
 }
 
-.main5 div:nth-child(1) {
+.main5>div:nth-child(1) {
     display: grid;
     grid-template-columns: 100%;
     align-self: center;
@@ -332,33 +337,33 @@ h6 {
     padding: 0 8vw;
 }
 
-.main5 div:nth-child(1) h1 {
+.main5>div:nth-child(1) h1 {
     font-size: 4vw;
     font-family: "Kaushan Script", cursive;
     margin-bottom: 2vw;
 }
 
-.main5 div:nth-child(1) p {
+.main5>div:nth-child(1) p {
     margin-bottom: 2vw;
 }
 
-.main5 div:nth-child(2),
-.main5 div:nth-child(3) {
+.main5>div:nth-child(2)>div:nth-child(1),
+.main5>div:nth-child(2)>div:nth-child(2) {
     padding-left: 5vw;
     overflow: hidden;
 }
 
-.main5 div:nth-child(2) img {
+.main5>div:nth-child(2)>div:nth-child(1) img {
     width: 100%;
 }
 
-.main5 div:nth-child(3) img {
+.main5>div:nth-child(2)>div:nth-child(2) img {
     width: 150%;
 
 }
 
-.main5 div:nth-child(3) img,
-.main5 div:nth-child(2) img {
+.main5>div:nth-child(2)>div:nth-child(1) img,
+.main5>div:nth-child(2)>div:nth-child(2) img {
     height: 30vw;
     border-radius: 20px;
     object-fit: cover;
@@ -643,7 +648,18 @@ h6 {
     gap: 2vw;
     margin: 4vw 10%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+}
+
+.designideas>div:nth-child(2) {
+    display: grid;
+    gap: 2vw;
+    grid-template-columns: 1fr 1fr;
+}
+
+.designideas>div:nth-child(1) {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .designideas img {
@@ -742,6 +758,7 @@ h6 {
     color: var(--black);
     background-color: rgba(255, 255, 255, 0.2);
     height: 100%;
+    width: 100%;
 }
 
 .diys {
@@ -1102,8 +1119,8 @@ h6 {
     .main,
     .visit-to div:nth-child(1) img,
     .catagories img,
-    .main5 div:nth-child(2) img,
-    .main5 div:nth-child(3) img,
+    .main5>div:nth-child(2)>div:nth-child(1) img,
+    .main5>div:nth-child(2)>div:nth-child(2) img,
     .showcases>div,
     .designs,
     .designideas img,
@@ -1159,7 +1176,11 @@ h6 {
         margin: 0 8%;
     }
 
-    .horizontal, .main3, .main2, .main4, .main {
+    .horizontal,
+    .main3,
+    .main2,
+    .main4,
+    .main {
         width: 84%;
     }
 
@@ -1248,13 +1269,17 @@ h6 {
 
 }
 
-@media (max-width:1025px){
+@media (max-width:1025px) {
+
+    .spinner img {
+        width: 6vw;
+    }
 
     .main,
     .visit-to div:nth-child(1) img,
     .catagories img,
-    .main5 div:nth-child(2) img,
-    .main5 div:nth-child(3) img,
+    .main5>div:nth-child(2)>div:nth-child(1) img,
+    .main5>div:nth-child(2)>div:nth-child(2) img,
     .showcases>div,
     .designs,
     .designideas img,
@@ -1272,7 +1297,11 @@ h6 {
         margin: 0 4%;
     }
 
-    .horizontal, .main3, .main2, .main4, .main {
+    .horizontal,
+    .main3,
+    .main2,
+    .main4,
+    .main {
         width: 92%;
     }
 
@@ -1308,7 +1337,9 @@ h6 {
         height: 25vw;
     }
 
-    .beginnerp, .seasonaldec, .seasdec  {
+    .beginnerp,
+    .seasonaldec,
+    .seasdec {
         font-size: 1.5vw;
     }
 
@@ -1324,7 +1355,7 @@ h6 {
     .designideas h3 {
         font-size: 1.8vw;
     }
-    
+
     .designideas p {
         font-size: 1.3vw;
     }
@@ -1333,10 +1364,11 @@ h6 {
         font-size: 2vw;
     }
 
-    .designideades h1, .designideas h2 {
+    .designideades h1,
+    .designideas h2 {
         font-size: 2.8vw;
     }
-    
+
     .designideades p {
         font-size: 1.5vw;
     }
@@ -1369,7 +1401,9 @@ h6 {
         font-size: 3vw;
     }
 
-    .design3, .designideas, .diymain2 {
+    .design3,
+    .designideas,
+    .diymain2 {
         gap: 1.5vw;
     }
 
@@ -1383,12 +1417,14 @@ h6 {
         height: 26vw;
     }
 
-    .arrow90deg, .arrow90deg img {
+    .arrow90deg,
+    .arrow90deg img {
         width: 3vw;
         height: 3vw;
     }
 
-    .plantcarehead, .diymain {
+    .plantcarehead,
+    .diymain {
         height: 35vw;
     }
 
@@ -1403,7 +1439,11 @@ h6 {
     }
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
+
+    .spinner img {
+        width: 7vw;
+    }
 
     .main2 p {
         font-size: 2vw;
@@ -1429,11 +1469,11 @@ h6 {
         font-size: 3vw;
     }
 
-    .catagories p{
+    .catagories p {
         font-size: 2vw;
     }
 
-    .catagories{
+    .catagories {
         gap: 1vw;
     }
 
@@ -1449,7 +1489,7 @@ h6 {
         font-size: 2vw;
     }
 
-    .main5 div:nth-child(1) a{
+    .main5 div:nth-child(1) a {
         font-size: 2vw;
     }
 
@@ -1461,10 +1501,7 @@ h6 {
         font-size: 1.8vw;
     }
 
-    .showcaseDec {
-        font-size: 2vw;
-    }
-
+    .showcaseDec,
     .showcaseDec2nd {
         font-size: 2vw;
     }
@@ -1478,7 +1515,8 @@ h6 {
         height: 3vw;
     }
 
-    .designs, .designdes {
+    .designs,
+    .designdes {
         height: 30vw;
     }
 
@@ -1491,7 +1529,7 @@ h6 {
         margin-bottom: 1vw;
         font-weight: 400;
     }
-    
+
     .designideas p {
         font-size: 1.5vw;
     }
@@ -1513,11 +1551,13 @@ h6 {
         height: 24vw;
     }
 
-    .nextprev-container h1{
+    .nextprev-container h1 {
         font-size: 2.8vw;
     }
 
-    .beginnerp, .seasonaldec, .seasdec  {
+    .beginnerp,
+    .seasonaldec,
+    .seasdec {
         font-size: 2vw;
     }
 
@@ -1529,4 +1569,495 @@ h6 {
         font-size: 2.5vw;
     }
 
+    .showcaseDec,
+    .showcaseDec2nd {
+        font-size: 2.5vw;
+    }
+
+}
+
+@media (max-width:576px) {
+
+    .spinner img {
+        width: 8vw;
+    }
+
+    .showcase h1 {
+        font-size: 7vw;
+    }
+
+    .showcaseDec,
+    .showcaseDec2nd {
+        font-size: 3vw;
+    }
+
+    .showcases {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .showcases>div {
+        height: 60vw;
+    }
+
+    .plantName {
+        top: 60vw;
+        font-size: 6vw;
+    }
+
+    .designideades {
+        grid-template-columns: 100%;
+        gap: 4vw;
+    }
+
+    .designideades h1,
+    .designideas h2 {
+        font-size: 5vw;
+    }
+
+    .designideades p {
+        font-size: 3vw;
+    }
+
+    .design3 {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .designs,
+    .designdes {
+        height: 40vw;
+    }
+
+    .designdes h2 {
+        font-size: 4vw;
+    }
+
+    .designdes p {
+        font-size: 2.5vw;
+    }
+
+    .textalignright h2 {
+        font-size: 4vw;
+    }
+
+    .designideas {
+        gap: 4vw;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .designideas>div:nth-child(2) {
+        grid-template-columns: 1fr;
+    }
+
+    .designideas h3 {
+        font-size: 3vw;
+    }
+
+    .designideas p {
+        font-size: 2vw;
+    }
+
+    .designideasleftH p {
+        font-size: 3vw;
+    }
+
+    .plantcarehead,
+    .diymain,
+    .main,
+    .main6 {
+        height: 50vw;
+    }
+
+    .diymain h1,
+    .plantcarehead h1 {
+        font-size: 6vw;
+    }
+
+    .plantcarehead p,
+    .diymain p span {
+        font-size: 3vw;
+    }
+
+    .diymain2 {
+        grid-template-columns: 1fr;
+        height: auto;
+        gap: 2vw;
+    }
+
+    .diymain2 .box {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    .diymain2 .box p {
+        font-size: 8vw;
+    }
+
+    .textaligncenter h2 {
+        font-size: 5vw;
+    }
+
+    .diymain2 .designideasleftH {
+        margin: 5vw 10vw;
+    }
+
+    .diymain2 .designideasleftH p {
+        font-size: 4vw;
+    }
+
+    .nextprev-container h1 {
+        font-size: 5vw;
+    }
+
+    .carousel-img {
+        flex: 0 0 60%;
+        max-width: calc(60% - 20px);
+    }
+
+    .carousel-img,
+    .carousel-img img {
+        height: 60vw;
+    }
+
+    .forbeginner {
+        grid-template-columns: 1fr;
+        gap: 4vw;
+    }
+
+    .beginnercontent div:nth-child(1),
+    .beginnercontent img {
+        height: 50vw;
+    }
+
+    .beginnerhead {
+        font-size: 5vw;
+    }
+
+    .beginnerp,
+    .seasonaldec {
+        font-size: 3vw;
+    }
+
+    .seasdec {
+        font-size: 4vw;
+    }
+
+    .seasonal {
+        margin: 8vw 4%;
+    }
+
+    .seasonal1,
+    .seasonal2 {
+        grid-template-columns: 1fr;
+        height: 100vw;
+    }
+
+    .seasflowimg img {
+        object-fit: cover;
+        height: 50vw;
+    }
+
+    .seasflowhead {
+        font-size: 4vw;
+    }
+
+    .arrow90deg,
+    .arrow90deg img {
+        width: 6vw;
+        height: 6vw;
+    }
+
+    .seasonalflower {
+        margin: 2vw;
+    }
+
+    .carouselhead h2 {
+        font-size: 5vw;
+    }
+
+    .carouselpara p {
+        font-size: 4vw;
+    }
+
+    .main2 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .main2 div:nth-child(2) {
+        padding: 5% 30%;
+        font-size: 4.2vw;
+        border-right: 2px solid transparent;
+        border-left: 2px solid transparent;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+    }
+
+    .main2 div:nth-child(2) img {
+        width: 6vw;
+    }
+
+    .main2 p {
+        font-size: 3vw;
+    }
+
+    .main3 div:nth-child(1) p {
+        font-size: 3vw;
+    }
+
+    .main p,
+    .main6 p {
+        font-size: 8vw;
+    }
+
+    .visit-to {
+        grid-template-columns: 100%;
+    }
+
+    
+.visit-to div:nth-child(2) {
+    border-left: 2px solid transparent;
+    border-top: 1px solid gray;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+}
+
+.visit-to div:nth-child(1) img {
+    width: 100%;
+    object-fit: cover;
+    height: 50vw;
+    margin-bottom: 4vw;
+}
+
+.visit-to div:nth-child(2) p,.main4-heading p, .catagories p, .main5>div:nth-child(1) p{
+    font-size: 3vw;
+}
+
+.visit-to h1, .main4 h1 {
+    font-size: 6vw;
+}
+
+.main4-heading {
+    margin: 0 5%;
+    margin-bottom: 4vw;
+}
+
+.catagories {
+    grid-template-columns: 1fr;
+    gap: 2vw;
+}
+
+.catagories h2 {
+    font-size: 4vw;
+}
+
+.catagories img {
+    height: 50vw;
+}
+
+.main5 {
+    grid-template-columns: 100%;
+    gap: 4vw;
+}
+
+.main5>div:nth-child(1) h1 {
+    font-size: 6vw;
+}
+
+.main5>div:nth-child(2)>div:nth-child(1) img,
+.main5>div:nth-child(2)>div:nth-child(2) img{
+    height: 60vw;
+}
+
+.main7 p:nth-child(2) {
+    font-size: 2.5vw;
+}
+
+.main7 h3 {
+    font-size: 3vw;
+}
+
+.main7 p:nth-child(1) {
+    font-size: 3vw;
+}
+
+}
+
+@media (max-width:480px){
+
+    .header {
+        padding-top: 20px;
+    }
+
+    .spinner img {
+        width: 10vw;
+    }
+
+    .showcaseDec,
+    .showcaseDec2nd {
+        font-size: 4vw;
+    }
+
+    .designideades h1,
+    .designideas h2 {
+        font-size: 6vw;
+    }
+
+    .designideades p {
+        font-size: 4vw;
+    }
+
+    .design3 {
+        grid-template-columns: 1fr;
+        gap: 4vw;
+    }
+
+    .designs,
+    .designdes {
+        height: 60vw;
+    }
+
+    .designdes h2 {
+        font-size: 5vw;
+    }
+
+    .designdes p {
+        font-size: 4vw;
+    }
+
+    .textalignright h2 {
+        font-size: 5vw;
+    }
+
+    .designideas {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .designideas h3 {
+        font-size: 4vw;
+    }
+
+    .designideas p {
+        font-size: 3vw;
+    }
+
+    .plantcarehead,
+    .diymain,
+    .main,
+    .main6 {
+        height: 60vw;
+    }
+
+    .diymain h1,
+    .plantcarehead h1 {
+        font-size: 7vw;
+    }
+
+    .plantcarehead p,
+    .diymain p span {
+        font-size: 3.5vw;
+    }
+
+    .diymain2 .box {
+        width: 60vw;
+        height: 60vw;
+    }
+
+    .textaligncenter h2 {
+        font-size: 6vw;
+    }
+
+    .nextprev-container h1 {
+        font-size: 6vw;
+    }
+
+    .carousel-img {
+        flex: 0 0 80%;
+        max-width: calc(80% - 20px);
+    }
+
+    .carousel-img,
+    .carousel-img img {
+        height: 80vw;
+    }
+
+    .beginnercontent div:nth-child(1),
+    .beginnercontent img {
+        height: 60vw;
+    }
+
+    .beginnerhead {
+        font-size: 6vw;
+    }
+
+    .beginnerp,
+    .seasonaldec {
+        font-size: 4vw;
+    }
+
+    .seasdec {
+        font-size: 5vw;
+    }
+
+    .seasflowhead {
+        font-size: 5vw;
+    }
+
+    .arrow90deg,
+    .arrow90deg img {
+        width: 7vw;
+        height: 7vw;
+    }
+
+    .carouselhead h2 {
+        font-size: 6vw;
+    }
+
+    .carouselpara p {
+        font-size: 5vw;
+    }
+
+    .main2 p {
+        font-size: 4vw;
+    }
+
+    .main3 div:nth-child(1) p {
+        font-size: 4vw;
+    }
+
+    .main p,
+    .main6 p {
+        font-size: 10vw;
+}
+
+.visit-to div:nth-child(2) p,.main4-heading p, .catagories p, .main5>div:nth-child(1) p{
+    font-size: 4vw;
+}
+
+.visit-to h1, .main4 h1 {
+    font-size: 7vw;
+}
+
+.catagories h2 {
+    font-size: 5vw;
+}
+
+.catagories img {
+    height: 60vw;
+}
+
+.main5>div:nth-child(1) h1 {
+    font-size: 7vw;
+}
+
+.main7 p:nth-child(2) {
+    font-size: 3vw;
+}
+
+.main7 h3 {
+    font-size: 4vw;
+}
+
+.main7 p:nth-child(1) {
+    font-size: 4vw;
+}
 }

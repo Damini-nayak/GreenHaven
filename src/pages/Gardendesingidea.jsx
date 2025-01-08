@@ -14,12 +14,12 @@ export default function Gardendesingidea() {
     <div className='designhoriz'><hr className='horizontal' /><p>lorem ipsum dolor sit</p><hr className='horizontal' /></div>
     <div className='textalignright'><div></div><h2><span>Lorem ipsum</span> dolor sit amet consectetur adipisicing. quasi perspiciatis</h2></div>
     <div className='designideas'>
-      <div><h2>//Tarrace Garden</h2></div>
-      <div><img src={Base.image7} alt="" /><h3>lorem ipsum dolor sit</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laboriosam quod officiis, ullam cum ipsa doloribus sit corrupti! Eaque maiores voluptatibus non dignissimos dolores sit animi inventore laboriosam illo rerum!</p></div>
+      <div><div><h2>//Tarrace Garden</h2></div>
+      <div className='designideasleftH'><div><p>lorem ipsum dolor</p><p>sit amet consectetur</p></div></div></div>
+      <div><div><img src={Base.image7} alt="" /><h3>lorem ipsum dolor sit</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laboriosam quod officiis, ullam cum ipsa doloribus sit corrupti! Eaque maiores voluptatibus non dignissimos dolores sit animi inventore laboriosam illo rerum!</p></div>
       <div><img src={Base.image3} alt="" /><h3>lorem ipsum dolor sit</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laboriosam quod officiis, ullam cum ipsa doloribus sit corrupti! Eaque maiores voluptatibus non dignissimos dolores</p></div>
-      <div className='designideasleftH'><div><p>lorem ipsum dolor</p><p>sit amet consectetur</p></div></div>
       <div><img src={Base.image8} alt="" /><h3>lorem ipsum dolor sit</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laboriosam quod officiis, ullam cum ipsa doloribus sit corrupti! Eaque maiores voluptatibus non dignissimos dolores sit animi inventore laboriosam illo rerum!</p></div>
-      <div><img src={Base.image6} alt="" /><h3>lorem ipsum dolor sit</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laboriosam quod officiis, ullam cum ipsa doloribus sit corrupti! Eaque maiores voluptatibus non dignissimos dolores</p></div>
+      <div><img src={Base.image6} alt="" /><h3>lorem ipsum dolor sit</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste laboriosam quod officiis, ullam cum ipsa doloribus sit corrupti! Eaque maiores voluptatibus non dignissimos dolores</p></div></div>
     </div>
     <div className='designhoriz'><hr className='horizontal' /><p>&copy;2024</p><hr className='horizontal' /></div>
     
