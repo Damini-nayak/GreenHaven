@@ -424,18 +424,11 @@ h6 {
     font-family: "Kaushan Script", cursive;
 }
 
-.footer p {
-    font-size: 0.8vw;
-}
-
-.footer div:nth-child(1) h6 {
-    font-size: 0.8vw;
-}
 
 .footer div:nth-child(1) p {
     margin-bottom: 20px;
     margin-top: 20px;
-    font-size: 0.8vw;
+    /* font-size: 0.8vw; */
 }
 
 .footer div:nth-child(1) img {
@@ -443,8 +436,8 @@ h6 {
     margin-right: 20px;
 }
 
-.footer div:nth-child(2) h6 {
-    font-size: 0.8vw;
+.footer div:nth-child(2) p:nth-child(1) {
+    /* font-size: 0.8vw; */
     font-weight: 400;
     margin-bottom: 20px;
 }
@@ -1098,6 +1091,14 @@ h6 {
 /* Extra large devices (large desktops, 1200px and up) */
 @media (max-width: 1367px) {
 
+    .footer div:nth-child(1) h4 {
+        font-size: 3vw;
+    }
+
+    .designhoriz p {
+        font-size: 1.2vw;
+    }
+
     .spinner img {
         width: 4vw;
     }
@@ -1149,6 +1150,14 @@ h6 {
 }
 
 @media (max-width: 1200px) {
+
+    .footer div:nth-child(1) h4 {
+        font-size: 3.5vw;
+    }
+
+    .designhoriz p {
+        font-size: 1.4vw;
+    }
 
     .spinner img {
         width: 5vw;
@@ -1270,6 +1279,14 @@ h6 {
 }
 
 @media (max-width:1025px) {
+
+    .footer div:nth-child(1) h4 {
+        font-size: 4vw;
+    }
+
+    .designhoriz p {
+        font-size: 1.6vw;
+    }
 
     .spinner img {
         width: 6vw;
@@ -1441,6 +1458,10 @@ h6 {
 
 @media (max-width:768px) {
 
+    .footer div:nth-child(1) h4 {
+        font-size: 6vw;
+    }
+
     .spinner img {
         width: 7vw;
     }
@@ -1574,9 +1595,34 @@ h6 {
         font-size: 2.5vw;
     }
 
+    .designhoriz p {
+        font-size: 1.8vw;
+    }
+
 }
 
 @media (max-width:576px) {
+
+    .footer div:nth-child(1) h4 {
+        font-size: 8vw;
+    }
+
+    .footer {
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+
+    .footer div:nth-child(1) {
+        margin-right: 0;
+    }
+    
+    .footer>div:nth-child(2) {
+        margin-left: 0;
+    }
+
+    .designhoriz p {
+        font-size: 2.2vw;
+    }
 
     .spinner img {
         width: 8vw;
@@ -1883,6 +1929,14 @@ h6 {
 }
 
 @media (max-width:480px){
+
+    .footer div:nth-child(1) h4 {
+        font-size: 10vw;
+    }
+
+    .designhoriz p {
+        font-size: 2.6vw;
+    }
 
     .header {
         padding-top: 20px;
