@@ -2024,6 +2024,10 @@ h6 {
         font-size: 6vw;
     }
 
+    .nextprev-container{
+        grid-template-columns: 30% 70%;
+    }
+
     .carousel-img {
         flex: 0 0 80%;
         max-width: calc(80% - 20px);
