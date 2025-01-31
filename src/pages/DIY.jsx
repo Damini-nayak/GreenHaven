@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import Base from '../components/Base';
 import DIYcarousel from '../components/DIYcarousel';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 export default function DIY() {
   return (
     <>
+      <Header />
       <div className='diymain'>
         <div>
           <h1>Why DIY In Your Garden?</h1>
@@ -28,9 +31,10 @@ export default function DIY() {
       </div>
       <div className='designhoriz'><hr className='horizontal' /><p>lorem ipsum dolor sit</p><hr className='horizontal' /></div>
 
-    <DIYcarousel/>
-       <div className='showcase'><p className='showcaseDec2nd'>"Discover a variety of vibrant, fresh, and exotic plants, perfect for every outdoor space. Whether you're a seasoned gardener or just starting, these plants bring life and beauty to your surroundings. Explore now and find the perfect addition to your garden"</p></div>
-      < div className = 'designhoriz' ><hr className='horizontal' /><p>&copy;2024</p><hr className='horizontal' /></div >
+      <DIYcarousel />
+      <div className='showcase'><p className='showcaseDec2nd'>"Discover a variety of vibrant, fresh, and exotic plants, perfect for every outdoor space. Whether you're a seasoned gardener or just starting, these plants bring life and beauty to your surroundings. Explore now and find the perfect addition to your garden"</p></div>
+      < div className='designhoriz' ><hr className='horizontal' /><p>&copy;2024</p><hr className='horizontal' /></div >
+      <Footer />
     </>
   )
 }

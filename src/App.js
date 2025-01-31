@@ -33,9 +33,7 @@ function App() {
     <>
       {isLoading ? <Preloader /> : (
         <div className="content">
-          <Header />
           <Routes />
-          <Footer />
         </div>
       )}
     </>

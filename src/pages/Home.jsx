@@ -1,10 +1,12 @@
 import React from 'react'
 import Base from '../components/Base'
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
-    <div>
-
+    <>
+      <Header />
       <div className='main'><p>WELCOME TO <br /> OUR GARDEN</p></div>
 
       <div className='main2'><div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maiores esse quis soluta optio</p></div><div className='logo'><img src={Base.logo} alt="" />GreenHaven</div><div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maiores esse quis soluta optio</p></div></div>
@@ -31,11 +33,11 @@ export default function Home() {
       <div className="main5">
         <div><h1>Flower Showcase</h1><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis incidunt nisi expedita in exercitationem eius qui ad, obcaecati consequatur tempora sint atque voluptatem modi dolores maxime velit neque et illum.</p><a href="/showcase"><p>Lorem ipsum dolor sit amet consectet</p></a></div>
         <div><div><img src={Base.image6} alt="" /></div>
-        <div><img src={Base.image3} alt="" /></div></div>
+          <div><img src={Base.image3} alt="" /></div></div>
       </div>
 
       <div className="main6">
-      <p>Lorem ipsum dolor sit</p>
+        <p>Lorem ipsum dolor sit</p>
       </div>
 
       <div className="main7">
@@ -43,7 +45,7 @@ export default function Home() {
         <p>lorem ipsum dolor sit</p>
         <h3>lorem link</h3>
       </div>
-
-    </div>
+      <Footer />
+    </>
   )
 }

@@ -2,10 +2,13 @@ import React from 'react'
 import Base from '../components/Base'
 import Plantcarecarousel from '../components/plantcarecarousel'
 import Seasonal from '../components/Seasonal'
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 export default function Plantcareguide() {
   return (
     <>
+      <Header />
       <div className='plantcarehead'>
         <div>
           <h1>Plant Care Guide</h1>
@@ -24,17 +27,18 @@ export default function Plantcareguide() {
       <p className='seasonaldec'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officia, error voluptas, enim quis vitae eos repudiandae cumque aut laboriosam neque, odio id repellat nisi. Itaque nemo architecto accusantium placeat.</p>
       <div className='seasonal'>
         <div className='seasonal1'>
-          <Seasonal src={Base.tulips} plantname="Spring Plants" example="easdfghjk" cares={'asfghkljkhhg'}/>
-          <Seasonal src={Base.sunflower} plantname="Summer Plants" example="easdfghjk"/>
+          <Seasonal src={Base.tulips} plantname="Spring Plants" example="easdfghjk" cares={'asfghkljkhhg'} />
+          <Seasonal src={Base.sunflower} plantname="Summer Plants" example="easdfghjk" />
         </div>
         <div className='seasonal2'>
-        <Seasonal src={Base.pansies} plantname="Fall Plants" example="easdfghjk"/>
-        <Seasonal src={Base.hellebores} plantname="Winter Plants" example="easdfghjk"/>
-        </div> 
+          <Seasonal src={Base.pansies} plantname="Fall Plants" example="easdfghjk" />
+          <Seasonal src={Base.hellebores} plantname="Winter Plants" example="easdfghjk" />
+        </div>
       </div>
       <div className='designhoriz'><hr className='horizontal' /><p>lorem ipsum dolor sit</p><hr className='horizontal' /></div>
       <Plantcarecarousel />
       <div className='designhoriz'><hr className='horizontal' /><p>&copy;2024</p><hr className='horizontal' /></div>
+      <Footer />
     </>
   )
 }
